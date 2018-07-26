@@ -7,6 +7,4 @@ const settings = {
     source: 'data.json'
 };
 
-parse('{"a": 1}', settings);
-
 console.log(parse('{"a": 1}', settings));
