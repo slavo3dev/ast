@@ -1,0 +1,33 @@
+{
+  "name": "@enkidevs/curriculum-helpers",
+  "version": "2.1.2",
+  "description": "Helpers for parsing/transforming/compiling Enki Curriculum from and to different formats",
+  "main": "index.js",
+  "author": "Nemanja Stojanovic <nemanjacoder@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enkidevs/curriculum-processors.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/enkidevs/curriculum-processors/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "homepage": "https://github.com/enkidevs/curriculum-processors#readme",
+  "dependencies": {
+    "unist-util-assert": "^1.0.1",
+    "unist-util-map": "^1.0.3"
+  },
+  "devDependencies": {
+    "jest": "^22.4.2"
+  },
+  "jest": {
+    "testRegex": "/.*__tests__/.*\\.test.js$"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "type": "root",
+  "children": [
+    {
+      "type": "questionHeadline",
+      "children": [
+        {
+          "type": "text",
+          "value": "which algorithm is to be use in the following scenario?"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "type": "text",
+          "value": "Consider a complete, weighted graph. If we want to compute its minimum spanning tree,\nwhich starts from a given node we choose, which algorithm should we use?"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "start": null,
+      "loose": false,
+      "children": [
+        {
+          "type": "listItem",
+          "loose": false,
+          "checked": null,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Prim’s algorithm"
+                }
+              ]
+            }
+          ],
+          "correct": true
+        },
+        {
+          "type": "listItem",
+          "loose": false,
+          "checked": null,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Kruskal’s algorithm"
+                }
+              ]
+            }
+          ],
+          "correct": false
+        },
+        {
+          "type": "listItem",
+          "loose": false,
+          "checked": null,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Knapsack algorithm"
+                }
+              ]
+            }
+          ],
+          "correct": false
+        },
+        {
+          "type": "listItem",
+          "loose": false,
+          "checked": null,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Dijkstra’s algorithm"
+                }
+              ]
+            }
+          ],
+          "correct": false
+        }
+      ],
+      "answers": true
+    }
+  ]
+}

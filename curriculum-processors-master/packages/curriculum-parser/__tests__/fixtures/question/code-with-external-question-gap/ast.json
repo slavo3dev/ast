@@ -1,0 +1,139 @@
+{
+  "type": "root",
+  "children": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "type": "text",
+          "value": "What is the specificity of the following CSS code snippet?"
+        }
+      ]
+    },
+    {
+      "type": "code",
+      "lang": "css",
+      "value": "#div.selected a{}"
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "type": "questionGap",
+          "value": "???"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "start": null,
+      "loose": false,
+      "children": [
+        {
+          "type": "listItem",
+          "loose": false,
+          "checked": null,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "0-1-1-1"
+                }
+              ]
+            }
+          ],
+          "correct": true
+        },
+        {
+          "type": "listItem",
+          "loose": false,
+          "checked": null,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "0-0-2-1"
+                }
+              ]
+            }
+          ],
+          "correct": false
+        },
+        {
+          "type": "listItem",
+          "loose": false,
+          "checked": null,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "1-1-2-1"
+                }
+              ]
+            }
+          ],
+          "correct": false
+        },
+        {
+          "type": "listItem",
+          "loose": false,
+          "checked": null,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "0-2-1-0"
+                }
+              ]
+            }
+          ],
+          "correct": false
+        },
+        {
+          "type": "listItem",
+          "loose": false,
+          "checked": null,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "1-1-1-0"
+                }
+              ]
+            }
+          ],
+          "correct": false
+        },
+        {
+          "type": "listItem",
+          "loose": false,
+          "checked": null,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "1-2-1-2"
+                }
+              ]
+            }
+          ],
+          "correct": false
+        }
+      ],
+      "answers": true
+    }
+  ]
+}

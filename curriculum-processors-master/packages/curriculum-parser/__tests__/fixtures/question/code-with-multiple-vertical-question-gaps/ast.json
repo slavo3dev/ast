@@ -1,0 +1,154 @@
+{
+  "type": "root",
+  "children": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "type": "text",
+          "value": "What do each of the following flags represent?"
+        }
+      ]
+    },
+    {
+      "type": "questionCode",
+      "lang": "bash",
+      "value": "#-i =???\n#-r =???\n#-c =???\n#default =???",
+      "children": [
+        {
+          "type": "questionCodeLine",
+          "children": [
+            {
+              "lang": "bash",
+              "type": "questionCodeSegment",
+              "value": "#-i ="
+            },
+            {
+              "type": "questionGap",
+              "value": "???"
+            }
+          ]
+        },
+        {
+          "type": "questionCodeLine",
+          "children": [
+            {
+              "lang": "bash",
+              "type": "questionCodeSegment",
+              "value": "#-r ="
+            },
+            {
+              "type": "questionGap",
+              "value": "???"
+            }
+          ]
+        },
+        {
+          "type": "questionCodeLine",
+          "children": [
+            {
+              "lang": "bash",
+              "type": "questionCodeSegment",
+              "value": "#-c ="
+            },
+            {
+              "type": "questionGap",
+              "value": "???"
+            }
+          ]
+        },
+        {
+          "type": "questionCodeLine",
+          "children": [
+            {
+              "lang": "bash",
+              "type": "questionCodeSegment",
+              "value": "#default ="
+            },
+            {
+              "type": "questionGap",
+              "value": "???"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "start": null,
+      "loose": false,
+      "children": [
+        {
+          "type": "listItem",
+          "loose": false,
+          "checked": null,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "inlineCode",
+                  "value": "case-insensitive search"
+                }
+              ]
+            }
+          ],
+          "correct": true
+        },
+        {
+          "type": "listItem",
+          "loose": false,
+          "checked": null,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "inlineCode",
+                  "value": "recursive search in current directory"
+                }
+              ]
+            }
+          ],
+          "correct": true
+        },
+        {
+          "type": "listItem",
+          "loose": false,
+          "checked": null,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "inlineCode",
+                  "value": "count"
+                }
+              ]
+            }
+          ],
+          "correct": true
+        },
+        {
+          "type": "listItem",
+          "loose": false,
+          "checked": null,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "inlineCode",
+                  "value": "case-sensitive search"
+                }
+              ]
+            }
+          ],
+          "correct": true
+        }
+      ],
+      "answers": true
+    }
+  ]
+}
