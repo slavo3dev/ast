@@ -1,4 +1,5 @@
 const parse = require('json-to-ast');
+const json = require("../curriculum-compiler-json/index");
 
 const settings = {
   // Appends location information. Default is <true>
@@ -7,4 +8,4 @@ const settings = {
   source: 'data.json'
 };
 
-parse('{"a": 1}', settings); 
+parse(json, settings);

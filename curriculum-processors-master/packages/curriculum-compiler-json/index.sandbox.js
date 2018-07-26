@@ -1736,7 +1736,433 @@ const ast = {
     }
 }
 
+const ast2 = {
+    "type": "root",
+    "children": [
+        {
+            "type": "yaml",
+            "value": "author: jfarmer\n\nlevels:\n\n  - beginner\n  - basic\n  - medium\n  - advanced" +
+                    "\n\ntype: normal\n\ncategory: must-know\n\nlinks:\n    - >-\n        [Why is it " +
+                    "safer to keep the tree balanced?](http://stackoverflow.com/questions/8015630/def" +
+                    "inition-of-a-balanced-tree){website}\n\nparent: removing-keys-from-a-binary-sear" +
+                    "ch-tree",
+            "data": {
+                "parsedValue": {
+                    "author": "jfarmer",
+                    "levels": [
+                        "beginner", "basic", "medium", "advanced"
+                    ],
+                    "type": "normal",
+                    "category": "must-know",
+                    "links": [
+                        {
+                            "name": "Why is it safer to keep the tree balanced?",
+                            "url": "http://stackoverflow.com/questions/8015630/definition-of-a-balanced-tree",
+                            "nature": "website"
+                        }
+                    ],
+                    "parent": "removing-keys-from-a-binary-search-tree"
+                }
+            }
+        }, {
+            "type": "headline",
+            "children": [
+                {
+                    "type": "text",
+                    "value": "Balanced vs. Unbalanced Binary Trees"
+                }
+            ]
+        }, {
+            "type": "section",
+            "name": "Content",
+            "children": [
+                {
+                    "type": "paragraph",
+                    "children": [
+                        {
+                            "type": "text",
+                            "value": "A binary tree is called "
+                        }, {
+                            "type": "emphasis",
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "value": "balanced"
+                                }
+                            ]
+                        }, {
+                            "type": "text",
+                            "value": " if every leaf node is not more than a certain distance away from the root than " +
+                                    "any other leaf.  That is, if we take any two leaf nodes (including empty nodes)," +
+                                    " the distance between each node and the root is approximately the same.  In most" +
+                                    " cases \"approximately the same\" means the distance between the leaf and the ro" +
+                                    "ot is not greater than 1, but the exact number can vary from application to appl" +
+                                    "ication."
+                        }
+                    ]
+                }, {
+                    "type": "paragraph",
+                    "children": [
+                        {
+                            "type": "text",
+                            "value": "This distance constraint ensures that it takes approximately the same amount of " +
+                                "time to reach any leaf node in a binary tree from the root. A linked listis a ki" +
+                                "nd of maximally-unbalanced binary tree."
+                        }
+                    ]
+                }, {
+                    "type": "paragraph",
+                    "children": [
+                        {
+                            "type": "text",
+                            "value": "Consider the following unbalanced tree. The nodes that can be swapped to balance" +
+                                " the tree are highlighted:"
+                        }
+                    ]
+                }, {
+                    "type": "paragraph",
+                    "children": [
+                        {
+                            "type": "image",
+                            "title": null,
+                            "url": "",
+                            "alt": "unbalanced",
+                            "svg": true
+                        }
+                    ]
+                }, {
+                    "type": "paragraph",
+                    "children": [
+                        {
+                            "type": "text",
+                            "value": "In order to balance the above tree, the "
+                        }, {
+                            "type": "inlineCode",
+                            "value": "10-15-13"
+                        }, {
+                            "type": "text",
+                            "value": " subtree has to be \"rotated\":"
+                        }
+                    ]
+                }, {
+                    "type": "paragraph",
+                    "children": [
+                        {
+                            "type": "image",
+                            "title": null,
+                            "url": "",
+                            "alt": "balanced",
+                            "svg": true
+                        }
+                    ]
+                }, {
+                    "type": "paragraph",
+                    "children": [
+                        {
+                            "type": "text",
+                            "value": "This is a problem for binary search trees (BSTs) because an ordered linked list " +
+                                    "is a BST and searching it is linear. Thus, a BST has log-time searching "
+                        }, {
+                            "type": "emphasis",
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "value": "on average"
+                                }
+                            ]
+                        }, {
+                            "type": "text",
+                            "value": ", but a linear-time worst case."
+                        }
+                    ]
+                }, {
+                    "type": "paragraph",
+                    "children": [
+                        {
+                            "type": "text",
+                            "value": "Solving this problem and guaranteeing that the tree remains more-or-less balance" +
+                                    "d is one of the main motivations behind more complex BST-like data structures, e" +
+                                    ".g. AVL trees"
+                        }, {
+                            "type": "linkReference",
+                            "identifier": "1",
+                            "referenceType": "shortcut",
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "value": "1"
+                                }
+                            ]
+                        }, {
+                            "type": "text",
+                            "value": " and red-black trees"
+                        }, {
+                            "type": "linkReference",
+                            "identifier": "2",
+                            "referenceType": "shortcut",
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "value": "2"
+                                }
+                            ]
+                        }, {
+                            "type": "text",
+                            "value": "."
+                        }
+                    ]
+                }
+            ]
+        }, {
+            "type": "section",
+            "name": "Revision",
+            "children": [
+                {
+                    "type": "paragraph",
+                    "children": [
+                        {
+                            "type": "text",
+                            "value": "Which of the following data structures is a type of "
+                        }, {
+                            "type": "emphasis",
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "value": "maximally-unbalanced"
+                                }
+                            ]
+                        }, {
+                            "type": "text",
+                            "value": " binary tree?"
+                        }
+                    ]
+                }, {
+                    "type": "paragraph",
+                    "children": [
+                        {
+                            "type": "questionGap",
+                            "value": "???"
+                        }
+                    ]
+                }, {
+                    "type": "list",
+                    "ordered": false,
+                    "start": null,
+                    "loose": false,
+                    "children": [
+                        {
+                            "type": "listItem",
+                            "loose": false,
+                            "checked": null,
+                            "children": [
+                                {
+                                    "type": "paragraph",
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "value": "Ordered linked list"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "correct": true
+                        }, {
+                            "type": "listItem",
+                            "loose": false,
+                            "checked": null,
+                            "children": [
+                                {
+                                    "type": "paragraph",
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "value": "Ordered array"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "correct": false
+                        }, {
+                            "type": "listItem",
+                            "loose": false,
+                            "checked": null,
+                            "children": [
+                                {
+                                    "type": "paragraph",
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "value": "Weighted graph"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "correct": false
+                        }, {
+                            "type": "listItem",
+                            "loose": false,
+                            "checked": null,
+                            "children": [
+                                {
+                                    "type": "paragraph",
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "value": "Max-heap"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "correct": false
+                        }
+                    ],
+                    "answers": true
+                }
+            ],
+            "question": true
+        }, {
+            "type": "section",
+            "name": "Quiz",
+            "children": [
+                {
+                    "type": "questionHeadline",
+                    "children": [
+                        {
+                            "type": "text",
+                            "value": "what is the output of the following script?"
+                        }
+                    ]
+                }, {
+                    "type": "code",
+                    "lang": "bash",
+                    "value": "#!/bin/bash\na=1\n{ a=2 }\necho $a"
+                }, {
+                    "type": "list",
+                    "ordered": false,
+                    "start": null,
+                    "loose": false,
+                    "children": [
+                        {
+                            "type": "listItem",
+                            "loose": false,
+                            "checked": null,
+                            "children": [
+                                {
+                                    "type": "paragraph",
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "value": "\"Error: unexpected end of file\""
+                                        }
+                                    ]
+                                }
+                            ],
+                            "correct": true
+                        }, {
+                            "type": "listItem",
+                            "loose": false,
+                            "checked": null,
+                            "children": [
+                                {
+                                    "type": "paragraph",
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "value": "1"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "correct": false
+                        }, {
+                            "type": "listItem",
+                            "loose": false,
+                            "checked": null,
+                            "children": [
+                                {
+                                    "type": "paragraph",
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "value": "2"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "correct": false
+                        }, {
+                            "type": "listItem",
+                            "loose": false,
+                            "checked": null,
+                            "children": [
+                                {
+                                    "type": "paragraph",
+                                    "children": [
+                                        {
+                                            "type": "text",
+                                            "value": "$a"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "correct": false
+                        }
+                    ],
+                    "answers": true
+                }
+            ],
+            "question": true
+        }, {
+            "type": "section",
+            "name": "Footnotes",
+            "children": [
+                {
+                    "type": "paragraph",
+                    "children": [
+                        {
+                            "type": "linkReference",
+                            "identifier": "1: avl tree",
+                            "referenceType": "shortcut",
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "value": "1: AVL tree"
+                                }
+                            ]
+                        }, {
+                            "type": "text",
+                            "value": "\nSelf-balancing binary search tree, in which the height of the two child subtre" +
+                                    "es of any node differ by at most one."
+                        }
+                    ]
+                }, {
+                    "type": "paragraph",
+                    "children": [
+                        {
+                            "type": "linkReference",
+                            "identifier": "2: red-black tree",
+                            "referenceType": "shortcut",
+                            "children": [
+                                {
+                                    "type": "text",
+                                    "value": "2: Red-Black tree"
+                                }
+                            ]
+                        }, {
+                            "type": "text",
+                            "value": "\nSelf-balancing binary search tree, in which nodes store an additional bit of d" +
+                                    "ata: whether the node is black or red. All of the tree's leaves must be black an" +
+                                    "d, in case of a node being red, its two children must be black."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
 const {getCompiler} = require('./index')
 const json = getCompiler('insight').compileSync(ast)
+const json2 = getCompiler('insight').compileSync(ast2)
 
-console.log(json)
+console.log(json2)
