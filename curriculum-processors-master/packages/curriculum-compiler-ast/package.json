@@ -7,10 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "\"enki\"",
-    "\"curriculm\"",
-    "\"compiler\"",
-    "\"json\""
+    "enki",
+    "curriculm",
+    "compiler",
+    "json"
   ],
   "author": "",
   "license": "ISC",
