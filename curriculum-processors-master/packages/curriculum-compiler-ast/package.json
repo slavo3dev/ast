@@ -13,5 +13,8 @@
     "\"json\""
   ],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "json-to-ast": "^2.0.3"
+  }
 }
