@@ -1,1 +1,1 @@
-const parse = require('json-to-ast');
+// JSON to AST Parser
